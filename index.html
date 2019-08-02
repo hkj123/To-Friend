@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <title>handsome boy</title>
+    <style type="text/css">
+        img {
+            position: absolute;
+            left: 0px;
+            top: 100px;
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome!</h1>
+<h1 >Welcome!</h1>
+<hr>
 
-
-<img src="./photos.jpg"  alt="handsome boy" width="365" height="120" />
-<img src="./back.jpg"  alt="handsome boy" width="700" height="500" />
+<div style="position:relative;">
+    <img src="./back.jpg " width="1300px" height="500px" />
+    <div style="position:absolute; left:600px; top:100px; border:#000 solid 1px;"><img  src="./photos.jpg" width="200px" height="200px"/></div>
+</div>
